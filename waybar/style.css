@@ -1,0 +1,51 @@
+* {
+    font-family: "CodeNewRoman Nerd Font Propo";
+    font-size: 13px;
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    box-shadow: none;
+    border: none;
+}
+
+window#waybar {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px 5px;
+}
+
+#workspaces,
+#window,
+.modules-right {
+    margin: 0px 10px;
+    background-color: alpha(#000000, 0.5);
+    border-radius: 0px 0px 10px 10px;
+    padding: 4px 5px;
+}
+#window {
+    min-width: 50px;
+}
+
+#workspaces button {
+    padding: 0px 5px;
+}
+#workspaces button label {
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease;
+}
+#workspaces button.empty label {
+    color: rgba(0, 0, 0, 0);
+}
+#workspaces button:hover {
+    background: none;
+    box-shadow: none;
+}
+#workspaces button:hover label {
+    color: rgba(0, 0, 0, 0);
+    transition: all 0.3s ease;
+}
+#workspaces button:not(:hover) label {
+    transition: all 0.3s ease;
+}
+#workspaces button.active label {
+    color: #2f88ff;
+}
