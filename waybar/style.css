@@ -1,51 +1,60 @@
 * {
     font-family: "CodeNewRoman Nerd Font Propo";
-    font-size: 13px;
-    color: white;
-    padding-top: 0;
-    padding-bottom: 0;
-    box-shadow: none;
-    border: none;
+    font-size: 15px;
 }
 
 window#waybar {
-    background-color: rgba(0, 0, 0, 0);
-    margin: 0px 5px;
+    all: unset;
 }
 
-#workspaces,
-#window,
-.modules-right {
-    margin: 0px 10px;
-    background-color: alpha(#000000, 0.5);
+.modules-left {
+    margin: 0px 0px 5px 10px;
+    background: alpha(#000000, 0.6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
     border-radius: 0px 0px 10px 10px;
-    padding: 4px 5px;
+    padding: 7px;
 }
-#window {
-    min-width: 50px;
+
+.modules-center {
+    margin: 0px 0px 5px 0px;
+    background: alpha(#000000, 0.6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 10px 10px;
+    padding: 7px;
+}
+
+.modules-right {
+    margin: 0px 10px 5px 0px;
+    background: alpha(#000000, 0.6);
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.6);
+    border-radius: 0px 0px 10px 10px;
+    padding: 7px;
+}
+
+#workspaces {
+    padding: 0px 5px;
 }
 
 #workspaces button {
+    all: unset;
     padding: 0px 5px;
-}
-#workspaces button label {
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
+    color: white;
     transition: all 0.2s ease;
 }
-#workspaces button.empty label {
-    color: rgba(0, 0, 0, 0);
-}
+
 #workspaces button:hover {
-    background: none;
-    box-shadow: none;
-}
-#workspaces button:hover label {
     color: rgba(0, 0, 0, 0);
-    transition: all 0.3s ease;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
 }
-#workspaces button:not(:hover) label {
-    transition: all 0.3s ease;
+
+#workspaces button.empty {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
 }
-#workspaces button.active label {
+
+#workspaces button.active {
     color: #2f88ff;
+    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.7);
 }
